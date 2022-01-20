@@ -30,6 +30,7 @@ public class AndroidTests extends TestBase {
     }
 
     @Test
+    @DisplayName("Проверка наличия раздела 'About' в настройках")
     void searchAboutInSettingsTest() {
         step("Открываем меню", () ->
                 $(MobileBy.id("org.wikipedia.alpha:id/menu_overflow_button")).click()
